@@ -4,14 +4,14 @@
 
 1. For getting all authors with books
 
-Request :- GET
+	Request :- GET
 
-URL :- /api/authors
+	URL :- /api/authors
 
 2. For getting author by id with books
 
-Request :- GET
+	Request :- GET
 
-URL :- /api/authors/:id
+	URL :- /api/authors/:id
 
-Note:- Pass author id in place of ":id"
+	Note:- Pass author id in place of ":id"
