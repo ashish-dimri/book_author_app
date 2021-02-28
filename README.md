@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Api Documentation
 
-Things you may want to cover:
+1. For getting all authors with books
 
-* Ruby version
+Request :- GET
+URL :- /api/authors
 
-* System dependencies
+2. For getting author by id with books
 
-* Configuration
+Request :- GET
+URL :- /api/authors/:id
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Note:- Pass author id in place of ":id"
