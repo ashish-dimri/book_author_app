@@ -1,0 +1,6 @@
+<tr>
+  <td> <%= book.title %> </td>
+  <td> <%= all_authors(book.authors) %></td>
+  <td> <%= link_to 'Edit', edit_book_path(book) %> </td>
+  <td> <%= link_to 'Delete', book_path(book), method: :delete %> </td>
+</tr>

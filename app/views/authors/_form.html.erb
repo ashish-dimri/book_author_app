@@ -1,0 +1,16 @@
+<%= form_for @author, class: "form-horizontal" do |f| %>
+	<div class="card">
+		<%= f.label :first_name %>
+	  <%= f.text_field :first_name %>
+	</div>
+	<div class="card">
+		<%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div>
+	<div class="card">
+		<%= f.label :dob %>
+    <%= f.text_field :dob %>
+  </div>
+  <%= f.submit %>
+  <% end %>
+<%= link_to 'Back to Authors List', authors_path %>

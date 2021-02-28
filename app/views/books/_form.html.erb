@@ -1,0 +1,12 @@
+<%= form_for @book, class: "form-horizontal" do |f| %>
+	<div class="card">
+		<%= f.label :title %>
+	  <%= f.text_field :title %>
+	</div>
+	<div class="card">
+		<%= f.label :authors %>
+		<%= f.collection_select(:author_ids, Author.all, :id, :full_name, {}, { :multiple => true } )%>
+	</div>
+  <%= f.submit %>
+  <% end %>
+<%= link_to 'Back to Book List', books_path %>

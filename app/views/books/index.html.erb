@@ -1,0 +1,17 @@
+<h1 class="jumbotron"> Books </h1>
+<div class="container">
+  <div class="row">
+    <%= link_to 'Add Book', new_book_path %>
+    <div class="col-12 card">
+      <table class="table">
+			  <thead>
+			    <th> Title </th>
+			    <th> Authors </th>
+			  </thead>
+			  <tbody>
+			  	<%= render partial: "book", collection: @books %>
+			  </tbody>
+			</table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<tr>
+  <td> <%= author.first_name %> </td>
+  <td> <%= author.last_name %> </td>
+  <td> <%= author.dob %> </td>
+  <td> <%= link_to 'Edit', edit_author_path(author) %> </td>
+  <td> <%= link_to 'Delete', author_path(author), method: :delete %> </td>
+</tr>
